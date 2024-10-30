@@ -71,3 +71,103 @@ nav ul li a:hover {
     border-right: 3px outset var(--quinto-color);
 
 }
+/* Footer */
+
+footer{
+    width: 100%;
+    background-color: var(--segundo-color);
+    padding-bottom: 20px;
+}
+
+.contenedor-footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.logo-texto{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.subtitulos-footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.caja-footer{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.caja-footer .logo img{
+    width: 180px;
+}
+
+.caja-footer .terms{
+    max-width: 350px;
+    margin-top: 20px;
+    font-weight: 500;
+    color: var(--negro);
+    opacity: 0.7;
+    font-size: 18px;
+}
+.contenedor-redes{
+    display: flex;
+    justify-content: center;
+}
+.redes{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.redes a {
+    flex: 1 1 45%; /* Cada enlace ocupa aproximadamente el 45% del ancho */
+    display: flex;
+    justify-content: center;
+}
+.caja-footer h2{
+    margin-bottom: 30px;
+    color: var(--negro);
+    font-weight: 700;
+}
+
+.caja-footer a{
+    margin-top: 10px;
+    color: var(--negro);
+    opacity: 0.7;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.caja-footer a:hover{
+    opacity: 0.8;
+}
+
+.caja-footer a .fab{
+    font-size: 20px;
+}
+
+.caja-copyright{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.caja-copyright p{
+    margin-top: 20px;
+    color: var(--negro);
+    opacity: 0.7;
+}
+
+.caja-copyright hr{
+    border: none;
+    height: 1px;
+    background-color: var(--negro);
+    opacity: 0.4;
+}
