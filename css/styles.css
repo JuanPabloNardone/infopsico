@@ -1,0 +1,73 @@
+:root {
+    --negro: #000;
+    --blanco: #FFF;
+    --primer-color: #ff5c71;
+    --segundo-color: #ff7f81;
+    --tercer-color: #ffa492;
+    --cuarto-color: #d0deb8;
+    --quinto-color: #fff4ce;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    background-color: var(--quinto-color);
+    color: var(--negro);
+}
+
+header{
+    background-color: var(--segundo-color);
+}
+.contenedor-header{
+    padding: 1em;
+}
+.logo{
+    width: 72px;
+}
+h1{
+    text-shadow: 4px 4px 8px var(--primer-color);
+}
+h4{
+    font-style: italic;
+}
+.navegacion{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav{
+    margin-left: 20px;
+    display: flex; 
+    flex-grow: 1;
+}
+
+nav ul {
+    display: flex; 
+    align-items: center;
+    list-style-type: none;    
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--negro);
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.5s;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    border-bottom: 3px outset var(--cuarto-color);
+    border-right: 3px outset var(--cuarto-color);
+    background-color: var(--cuarto-color);
+}
+
+nav ul li a:hover {
+    background-color: var(--tercer-color);
+    border-bottom: 3px outset var(--quinto-color);
+    border-right: 3px outset var(--quinto-color);
+
+}
