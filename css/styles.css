@@ -251,3 +251,379 @@ section{
     border-radius: 8px;
     margin: auto;
 }
+
+/*Estilos para Ls psicología*/
+.contenedor-columna-derecha{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+.contenedor-columna-derecha h2, .contenedor-columna-izquierda h2{
+    border-bottom: 1px solid var(--negro);
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 2px var(--primer-color);
+}
+.contenedor-columna-derecha p, .contenedor-columna-izquierda p {
+    padding-bottom: 5px;
+    text-align: justify;
+}
+.contenedor-columna-izquierda{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    justify-items: center; /*revisar*/
+    align-items: center; /*revisar*/
+}
+
+/*Ramas de la psicología*/
+.contenedor-ramas{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.flip-card-inner{
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner{
+    transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back{
+    backface-visibility: hidden;
+}
+.flip-card-front{
+    height: 250px;
+    width: 250px;
+    background-color: var(--tercer-color);
+    border-radius: 0px 25px 0px 25px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.flip-card-front h3{
+    font-size: 2vw;
+}
+.flip-card-front .imagen-ramas{
+    height: 100px;
+    background-image: url('../img/psicologia-ramas.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    
+}
+
+.flip-card-back{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: var(--tercer-color);
+    color: var(--negro);
+    transform: rotateY(180deg);
+    border-radius: 25px 0px 25px 0px;
+    padding: 25px;
+}
+.flip-card-back p{
+    text-align: center;
+    font-size: 1vw;
+}
+
+.super-sombra {
+    color: var(--negro);
+    font-weight: bold;
+    font-family: Helvetica;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+}
+
+/* Estilos para el formulario de contacto */
+.contact-form-section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 2rem;
+    background-color: var(--blanco);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-section h2 {
+    color: var(--negro);
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px var(--primer-color);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form label {
+    font-weight: 600;
+    color: var(--negro);
+    margin-bottom: 8px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid var(--cuarto-color);
+    background-color: var(--quinto-color);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    border-color: var(--primer-color);
+    outline: none;
+}
+
+.contact-form button {
+    padding: 12px;
+    font-size: 18px;
+    background-color: var(--primer-color);
+    color: var(--blanco);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: var(--segundo-color);
+}
+
+.contact-form input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.contact-form fieldset {
+    border: 2px solid var(--cuarto-color);
+    padding: 15px;
+    border-radius: 5px;
+    background-color: var(--quinto-color);
+}
+
+.contact-form fieldset legend {
+    font-weight: 600;
+    color: var(--negro);
+}
+
+.contact-form label input[type="radio"] {
+    margin-right: 8px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form input[type="number"] {
+    width: 100%;
+}
+
+.contact-form select {
+    width: 100%;
+}
+
+/* Estilos de la sección del formulario */
+.contact-form-section {
+    background-color: var(--quinto-color);
+    border-radius: 10px;
+    padding: 2em;
+}
+
+.contact-form-section h2 {
+    color: var(--primer-color);
+}
+
+/* Mejorar visibilidad de los inputs y botones */
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    box-shadow: 0 0 8px var(--tercer-color);
+}
+
+/* Estilos para la sección de comentarios */
+.comentarios-section {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 2rem;
+    background-color: var(--blanco);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.comentarios-section h2 {
+    color: var(--negro);
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px var(--primer-color);
+}
+
+.comentario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: var(--quinto-color);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.comentario-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--cuarto-color);
+}
+
+.comentario-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.comentario-nombre {
+    font-weight: 600;
+    color: var(--negro);
+}
+
+.estrellas {
+    display: flex;
+    gap: 5px;
+}
+
+.estrella {
+    width: 18px;
+    height: 18px;
+    background-color: var(--cuarto-color);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.estrella.llena {
+    background-color: #ff9800; /* Color amarillo para las estrellas llenas */
+}
+
+.estrella.vacia {
+    background-color: #ddd; /* Color gris para las estrellas vacías */
+}
+
+.comentario-texto {
+    font-size: 16px;
+    color: var(--negro);
+    font-weight: 300;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+/* Añadir un hover para los comentarios */
+.comentario:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+}
+
+/* Estilos para la sección de emociones */
+.contenedor-emociones {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 2rem 10%;
+    max-width: 1200px;
+    margin: auto;
+    align-items: start;
+}
+
+/* Estilo general para cada emoción */
+.emocion {
+    background-color: var(--quinto-color);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+/* Efecto hover para las emociones */
+.emocion:hover {
+    transform: translateY(-10px);
+}
+
+.contenedor-emocion {
+    display: grid;
+    grid-template-columns: 1fr 4fr; /* Imágenes a la izquierda (1/5) y texto a la derecha (4/5) */
+    gap: 1.5rem;
+    padding: 1.5rem;
+    align-items: center;
+}
+
+.imagen-emocion {
+    width: 100%;
+    height: auto;
+}
+
+.imagen-emocion img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.descripcion-emocion {
+    display: flex;
+    flex-direction: column;
+}
+
+.descripcion-emocion h2 {
+    font-size: 1.8rem;
+    color: var(--negro);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.descripcion-emocion h3 {
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    color: var(--negro);
+    font-weight: 500;
+}
+
+.descripcion-emocion p {
+    font-size: 1rem;
+    color: var(--negro);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .contenedor-emociones {
+        grid-template-columns: 1fr;
+    }
+
+    .contenedor-emocion {
+        grid-template-columns: 1fr; /* En pantallas pequeñas, la imagen irá encima del texto */
+    }
+
+    .imagen-emocion img {
+        border-radius: 15px;
+    }
+}
