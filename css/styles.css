@@ -31,9 +31,6 @@ header{
 .logo{
     width: 72px;
 }
-h1{
-    text-shadow: 4px 4px 8px var(--color--principal);
-}
 h2{
     border-bottom: 1px solid var(--negro);
     margin-bottom: 15px;
@@ -395,177 +392,41 @@ footer{
 
 } 
 
+/*COMENTARIOS.HTML: Estilos específicos*/
 
-
-
-
-
-
-
-/* Estilos para el formulario de contacto */
-.contact-form-section {
-    max-width: 800px;
+.comentarios-section { /*Contenedor gneral de comentarios*/
+    max-width: 90%;
     margin: 40px auto;
-    padding: 2rem;
-    background-color: var(--blanco);
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.contact-form-section h2 {
-    color: var(--negro);
-    text-align: center;
-    margin-bottom: 20px;
-    font-weight: 700;
-    text-shadow: 2px 2px 4px var(--color--principal);
-}
-
-.contact-form {
-    display: flex;
-    flex-direction: column;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
 
-.contact-form label {
-    font-weight: 600;
-    color: var(--negro);
-    margin-bottom: 8px;
-}
-
-.contact-form input,
-.contact-form select,
-.contact-form textarea {
-    padding: 12px;
-    font-size: 16px;
-    border-radius: 5px;
-    border: 2px solid var(--color--fondo);
-    background-color: var(--color--fondo);
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-    transition: border-color 0.3s;
-}
-
-.contact-form input:focus,
-.contact-form select:focus,
-.contact-form textarea:focus {
-    border-color: var(--color--principal);
-    outline: none;
-}
-
-.contact-form button {
-    padding: 12px;
-    font-size: 18px;
+.comentario { /*Card correspondiente al comentario individual*/
     background-color: var(--color--principal);
-    color: var(--blanco);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.contact-form button:hover {
-    background-color: var(--color--principal);
-}
-
-.contact-form input[type="checkbox"] {
-    margin-right: 10px;
-}
-
-.contact-form fieldset {
-    border: 2px solid var(--color--fondo);
-    padding: 15px;
-    border-radius: 5px;
-    background-color: var(--color--fondo);
-}
-
-.contact-form fieldset legend {
-    font-weight: 600;
-    color: var(--negro);
-}
-
-.contact-form label input[type="radio"] {
-    margin-right: 8px;
-}
-
-.contact-form textarea {
-    resize: vertical;
-}
-
-.contact-form input[type="number"] {
-    width: 100%;
-}
-
-.contact-form select {
-    width: 100%;
-}
-
-/* Estilos de la sección del formulario */
-.contact-form-section {
-    background-color: var(--color--fondo);
-    border-radius: 10px;
-    padding: 2em;
-}
-
-.contact-form-section h2 {
-    color: var(--color--principal);
-}
-
-/* Mejorar visibilidad de los inputs y botones */
-.contact-form input,
-.contact-form select,
-.contact-form textarea {
-    transition: box-shadow 0.3s ease-in-out;
-}
-
-.contact-form input:focus,
-.contact-form select:focus,
-.contact-form textarea:focus {
-    box-shadow: 0 0 8px var(--color--secundario);
-}
-
-/* Estilos para la sección de comentarios */
-.comentarios-section {
-    max-width: 1000px;
-    margin: 40px auto;
-    padding: 2rem;
-    background-color: var(--blanco);
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.comentarios-section h2 {
-    color: var(--negro);
-    text-align: center;
-    margin-bottom: 30px;
-    font-weight: 700;
-    text-shadow: 2px 2px 4px var(--color--principal);
-}
-
-.comentario {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    background-color: var(--color--fondo);
     padding: 15px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
-.comentario-header {
+.comentario-header { /*Encabezado del comentario (foto + nombre y calificación*/
     display: flex;
     align-items: center;
     gap: 15px;
 }
 
-.avatar {
+.avatar-usuario { /*Foto del usuario*/
     width: 60px;
     height: 60px;
     border-radius: 50%;
     object-fit: cover;
-    border: 2px solid var(--color--fondo);
+    border: 2px solid var(--blanco);
 }
 
-.comentario-info {
+.comentario-info { 
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -573,15 +434,15 @@ footer{
 
 .comentario-nombre {
     font-weight: 600;
-    color: var(--negro);
+    color: var(--blanco);
 }
 
-.estrellas {
+.estrellas { /*Contenedor de calificación*/
     display: flex;
     gap: 5px;
 }
 
-.estrella {
+.estrella { /*Calificación*/
     width: 18px;
     height: 18px;
     background-color: var(--color--fondo);
@@ -598,7 +459,7 @@ footer{
 
 .comentario-texto {
     font-size: 16px;
-    color: var(--negro);
+    color: var(--blanco);
     font-weight: 300;
     line-height: 1.5;
     margin-top: 10px;
@@ -611,7 +472,132 @@ footer{
     transition: all 0.3s;
 }
 
+/*CONTACTO.HTML: Estilos específicos*/
 
+.contenedor-columna-izquierda-contacto, .contenedor-secundario-form{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 20px;
+}
+
+.contact-form-section {
+    padding: 2rem;
+    background-color: var(--color--principal);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.datos{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.botones-form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: end;
+}
+.contenedor-dato{
+    display: flex;
+    flex-direction: row;
+}
+.contact-form label, .contenedor-secundario-form label {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    color: var(--negro);
+    margin: 8px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea,
+.contenedor-secundario-form textarea {
+    flex-grow: 1;
+    padding: 0px 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid var(--blanco);
+    background-color: var(--blanco);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    border-color: var(--negro);
+    outline: none;
+}
+
+.contenedor-secundario-form button {
+    padding: 12px;
+    font-size: 18px;
+    background-color: var(--color--destacado);
+    color: var(--blanco);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contenedor-secundario-form button:hover {
+    background-color: var(--color--fondo);
+    color: var(--negro);
+}
+
+.contact-form label input[type="radio"] {
+    margin-right: 8px;
+}
+
+.contact-form input[type="number"] {
+    width: 50%;
+}
+
+.contact-form input[type="checkbox"] { /*reseteamos propiedades para el checkbox*/
+    flex-grow: 0;
+    border-radius: 5px;
+    border: none;
+    box-shadow: none;
+}
+
+.contenedor-mas-datos {
+    display: grid;
+    gap: 15px; /* Espacio entre cada dato */
+    text-align: center;
+}
+
+.mas-datos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Espacio entre icono y texto */
+    justify-content: center;
+}
+
+.mas-datos img {
+    width: 24px; /* Tamaño uniforme para todos los iconos */
+    height: 24px;
+}
+
+.mas-datos span {
+    font-size: 1rem; /* Tamaño de texto consistente */
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+/*MEDIA QUERIES*/
 
 @media (max-width: 768px) {
     .contenedor-emociones {
