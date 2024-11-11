@@ -1,3 +1,5 @@
+/*Estilos generales root y universal*/
+
 :root {
     --negro: #000;
     --blanco: #FFF;
@@ -14,11 +16,12 @@
     font-family: "Open Sans", sans-serif;
 }
 
+/*Estilos para etiquetas semánticas: contenedores principales*/
+
 body {
     background-color: var(--color--fondo);
     color: var(--negro);
 }
-
 header{
     background-color: var(--color--principal);
 }
@@ -31,122 +34,117 @@ header{
 h1{
     text-shadow: 4px 4px 8px var(--color--principal);
 }
+h2{
+    border-bottom: 1px solid var(--negro);
+    margin-bottom: 15px;
+}
 h4{
     font-style: italic;
 }
-.navegacion{
+section{
+    padding-bottom: 20px;
+}
+
+/*Estilos para la barra de navegación*/
+
+.navegacion{ /*Contenedor principal de la barra de navegación*/
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-nav{
+nav{ /*Barra de navegación*/
     margin-left: 20px;
     display: flex; 
     flex-grow: 1;
 }
 
-nav ul {
+nav ul { /*Barra de navegación: lista con enlaces para botones*/
     display: flex; 
     align-items: center;
     list-style-type: none;    
     gap: 20px;
 }
 
-nav ul li a {
+nav ul li a { /*Barra de navegación: estilos de los enlaces para botones*/
     text-decoration: none;
-    color: var(--negro);
+    color: var(--blanco);
     padding: 10px 20px;
     border-radius: 5px;
     transition: all 0.5s;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
-    border-bottom: 3px outset var(--color--fondo);
-    border-right: 3px outset var(--color--fondo);
+    border-bottom: 3px outset var(--blanco);
+    border-right: 3px outset var(--blanco);
+    background-color: var(--color--destacado);
+}
+
+nav ul li a:hover { /*Barra de navegación: estilos de los enlaces para botones en hover*/
     background-color: var(--color--fondo);
-}
-
-nav ul li a:hover {
-    background-color: var(--color--secundario);
-    border-bottom: 3px outset var(--color--fondo);
-    border-right: 3px outset var(--color--fondo);
-
-}
-
-/*Main del index.html*/
-h2{
-    border-bottom: 1px solid var(--negro);
-    margin-bottom: 15px;
-}
-
-.lista-sobre{
-    margin-left: 20px;
+    color: var(--negro);
+    border-bottom: 3px outset var(--negro);
+    border-right: 3px outset var(--negro);
 }
 
 /* Footer */
-
 footer{
     width: 100%;
     background-color: var(--color--principal);
     padding-bottom: 20px;
 }
 
-.contenedor-footer{
+.contenedor-footer{ /*Contenedor general del footer*/
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     max-width: 1300px;
     margin: auto;
-
 }
 
-.logo-texto{
+.logo-texto{ /*Contenedior del logo y los subtítulos del footer*/
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
-.subtitulos-footer{
+.subtitulos-footer{ /*Contenedor de los subtítulos del footer*/
     display: flex;
     flex-direction: column;
     text-align: center;
 }
-.caja-footer{
+.caja-footer{ /*Cada una de las columnas del footer*/
     display: flex;
     flex-direction: column;
     padding: 30px;
 }
 
-.caja-footer .logo img{
-    width: 180px;
-}
-
-.caja-footer .terms{
+.caja-footer .descripcion{ /*Descripción que acompaña a los subtítulos*/
     max-width: 350px;
     margin-top: 20px;
     font-weight: 500;
     color: var(--negro);
     opacity: 0.7;
-    font-size: 18px;
+
 }
-.contenedor-redes{
+.contenedor-redes{ /*Contnedor para íconos de redes sociales*/
     display: flex;
     justify-content: center;
 }
-.redes{
+.redes{ /*Íconos de redes sociales*/
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
 }
-.redes a {
+.redes a { /*Cada elemento individual del contenedor de redes sociales*/
     flex: 1 1 45%; /* Cada enlace ocupa aproximadamente el 45% del ancho */
     display: flex;
     justify-content: center;
 }
-.caja-footer h2{
+.caja-footer h2{ /*Subtítulo de cada columna*/
     margin-bottom: 30px;
     color: var(--negro);
     font-weight: 700;
+    border: none; /*quitamos el borde general*/
 }
 
-.caja-footer a{
+.caja-footer a{ /**Enlasces de los subtítulos*/
     margin-top: 10px;
     color: var(--negro);
     opacity: 0.7;
@@ -154,36 +152,36 @@ footer{
     text-decoration: none;
 }
 
-.caja-footer a:hover{
+.caja-footer a:hover{ 
     opacity: 0.8;
 }
 
-.caja-footer a .fab{
-    font-size: 20px;
-}
-
-.caja-copyright{
+.caja-copyright{ /*Contenedor del copyright*/
     max-width: 1200px;
     margin: auto;
     text-align: center;
     padding: 0px 40px;
 }
 
-.caja-copyright p{
+.caja-copyright p{ /*Párrafos del copyright*/
     margin-top: 20px;
     color: var(--negro);
     opacity: 0.7;
 }
 
-.caja-copyright hr{
+.caja-copyright hr{ /*línea horizontal*/
     border: none;
     height: 1px;
     background-color: var(--negro);
     opacity: 0.4;
 }
 
-section{
-    padding-bottom: 20px;
+
+/*INDEX.HTML: Estilos específicos*/
+
+.lista-sobre{
+    margin-left: 20px;
+    text-align: justify;
 }
 
 /*Cards del index.html*/
@@ -264,7 +262,8 @@ section{
     margin: auto;
 }
 
-/*Estilos para Ls psicología*/
+/*PSICOLOGIA.HTML: Estilos específicos*/
+
 .contenedor-columna-derecha{
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -281,15 +280,16 @@ section{
 .contenedor-columna-izquierda{
     display: grid;
     grid-template-columns: 4fr 1fr;
-    justify-items: center; /*revisar*/
-    align-items: center; /*revisar*/
+    justify-items: center;
+    align-items: center;
 }
 
 /*Ramas de la psicología*/
 .contenedor-ramas{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
+    justify-content: space-around;
 }
 .flip-card-inner{
     text-align: center;
@@ -305,7 +305,9 @@ section{
 .flip-card-front{
     height: 250px;
     width: 250px;
-    background-color: var(--color--secundario);
+    padding: 10px;
+    background-color: var(--color--principal);
+    color: var(--blanco);
     border-radius: 0px 25px 0px 25px;
     display: grid;
     justify-content: center;
@@ -316,11 +318,10 @@ section{
 }
 .flip-card-front .imagen-ramas{
     height: 100px;
-    background-image: url('../img/psicologia-ramas.png');
+    background-image: url('../img/psicologia-ramas-blanco.png');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
-    
 }
 
 .flip-card-back{
@@ -339,12 +340,67 @@ section{
     font-size: 1vw;
 }
 
-.super-sombra {
-    color: var(--negro);
-    font-weight: bold;
-    font-family: Helvetica;
-    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+/*EMOCIONES.HTML: Estilos específicos*/
+
+/* Estilos para la sección de emociones */
+.contenedor-emociones {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
 }
+
+/* Estilo general para cada emoción */
+.emocion {
+    padding: 1em;
+    color: var(--blanco);
+    background-color: var(--color--principal);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.emocion h2{
+    border-color: var(--blanco);
+}
+/* Efecto hover para las emociones */
+.emocion:hover {
+    transform: translateY(-10px);
+}
+
+.contenedor-imagen-emocion {
+    padding: 10px;
+    display: grid;
+    justify-items: center;
+}
+.contenedor-imagen-emocion img {
+    width: 75%;
+    height: auto;
+    border-radius: 10px;
+}
+.descripcion-emocion {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+.descripcion-emocion p {
+    line-height: 1.5;
+    text-align: left;
+
+} 
+
+
+
+
+
+
+
 
 /* Estilos para el formulario de contacto */
 .contact-form-section {
@@ -555,76 +611,7 @@ section{
     transition: all 0.3s;
 }
 
-/* Estilos para la sección de emociones */
-.contenedor-emociones {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    padding: 2rem 10%;
-    max-width: 1200px;
-    margin: auto;
-    align-items: start;
-}
 
-/* Estilo general para cada emoción */
-.emocion {
-    background-color: var(--color--fondo);
-    border-radius: 15px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s ease;
-}
-
-/* Efecto hover para las emociones */
-.emocion:hover {
-    transform: translateY(-10px);
-}
-
-.contenedor-emocion {
-    display: grid;
-    grid-template-columns: 1fr 4fr; /* Imágenes a la izquierda (1/5) y texto a la derecha (4/5) */
-    gap: 1.5rem;
-    padding: 1.5rem;
-    align-items: center;
-}
-
-.imagen-emocion {
-    width: 100%;
-    height: auto;
-}
-
-.imagen-emocion img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-.descripcion-emocion {
-    display: flex;
-    flex-direction: column;
-}
-
-.descripcion-emocion h2 {
-    font-size: 1.8rem;
-    color: var(--negro);
-    margin-bottom: 1rem;
-    font-weight: 600;
-}
-
-.descripcion-emocion h3 {
-    font-size: 1.4rem;
-    margin-top: 1rem;
-    color: var(--negro);
-    font-weight: 500;
-}
-
-.descripcion-emocion p {
-    font-size: 1rem;
-    color: var(--negro);
-    line-height: 1.6;
-    margin-bottom: 1rem;
-}
 
 @media (max-width: 768px) {
     .contenedor-emociones {
