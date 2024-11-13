@@ -90,6 +90,11 @@ nav ul li a.active {
     text-shadow: 2px 2px 12px var(--negro);
 }
 
+.abrir-menu, .cerrar-menu{
+    display: none;
+}
+
+
 /* Footer */
 footer{
     width: 100%;
@@ -118,7 +123,7 @@ footer{
 .caja-footer{ /*Cada una de las columnas del footer*/
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 10px;  
 }
 
 .caja-footer .descripcion{ /*Descripción que acompaña a los subtítulos*/
@@ -127,6 +132,7 @@ footer{
     font-weight: 500;
     color: var(--negro);
     opacity: 0.7;
+    text-align: center;
 
 }
 .contenedor-redes{ /*Contnedor para íconos de redes sociales*/
@@ -155,6 +161,7 @@ footer{
     color: var(--negro);
     font-weight: 700;
     border: none; /*quitamos el borde general*/
+    text-align: center;
 }
 
 .caja-footer a{ /**Enlaces de los subtítulos*/
@@ -202,7 +209,6 @@ footer{
 .tipos-psico-contenedor{
     width: 100%;
     max-width: 1200px;
-    height: 430px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -283,7 +289,7 @@ footer{
 }
 .contenedor-columna-derecha h2, .contenedor-columna-izquierda h2{
     border-bottom: 1px solid var(--negro);
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
 
 }
 .contenedor-columna-derecha p, .contenedor-columna-izquierda p {
@@ -296,12 +302,16 @@ footer{
     justify-items: center;
     align-items: center;
 }
+.contenedor-columna-izquierda img{
+    width: 90%;
+    display: block;
+}
 
 /*Ramas de la psicología*/
 .contenedor-ramas{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px;
+    gap: 2rem;
     justify-content: space-around;
 }
 .flip-card-inner{
@@ -316,9 +326,9 @@ footer{
     backface-visibility: hidden;
 }
 .flip-card-front{
+    width: 100%;
     height: 250px;
-    width: 250px;
-    padding: 10px;
+    padding: 0.5rem;
     background-color: var(--color--principal);
     color: var(--blanco);
     border-radius: 0px 25px 0px 25px;
@@ -327,10 +337,10 @@ footer{
     align-content: center;
 }
 .flip-card-front h3{
-    font-size: 1.5vw;
+    font-size: 1.5rem;
 }
 .flip-card-front .imagen-ramas{
-    height: 100px;
+    height: 6rem;
     background-image: url('../img/psicologia-ramas-blanco.png');
     background-repeat: no-repeat;
     background-position: center center;
@@ -615,40 +625,111 @@ h3 {
 
 /*MEDIA QUERIES*/
 
-@media (max-width: 768px) {
-    .navegacion {
+@media screen and (max-width: 768px){
+
+    /*Barra de navegación responsive*/
+
+    .abrir-menu, .cerrar-menu{
+        display: block;
+        border: 0;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .abrir-menu{
+        color: #1c1c1c;
+    }
+
+    .cerrar-menu{
+        color: #ececec;
+    }
+
+    .navegacion nav {
+        opacity: 0;
+        visibility: hidden;
+    
+        display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #1c1c1c;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0,0,0, .5);
+    }
+
+    nav.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    nav ul{
+        flex-direction: column;
+        align-items: end;
+
+    }
+
+    nav ul li a {
+        color: #ececec;
+    }
+
+    /*Footer responsive*/
+    .contenedor-footer {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .caja-footer {
+        flex: 1 1 calc(50% - 20px); /* Cada columna ocupa el 50% en tablet */
+        max-width: 45%; /* Ajustamos para que se vea mejor */
+    }
+
+
+    /*INDEX: Recursos destacados responsive*/
+    .recursos-destacados-contenedor{
+        grid-template-columns: 1fr;
         gap: 10px;
     }
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
+
+    /*PSICOLOGÍA: Contenedores*/
+
+    .contenedor-columna-derecha{
+        grid-template-columns: 1fr;
+        justify-items: center;
     }
-    .contenedor-header {
-        text-align: center;
+
+
+    .contenedor-columna-izquierda{
+        grid-template-columns: 1fr;
     }
-    .logo {
-        margin-bottom: 10px;
+    .contenedor-columna-izquierda img{
+        display: none;
+    }
+    .contenedor-ramas{
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
     }
 }
 
 
+/* Media Query para dispositivos móviles (celulares) */
+@media screen and (max-width: 576px) {
+    .contenedor-footer {
+        flex-direction: column;
+        align-items: center;
+    }
 
-/*
-A REVISAR
+    .caja-footer {
+        flex: 1 1 100%; /* Cada columna ocupa el 100% en móviles */
+        max-width: 100%; /* Ajuste para que ocupe todo el ancho */
+    }
 
-
-@media (max-width: 768px) {
-    .contenedor-emociones {
+    .contenedor-ramas{
         grid-template-columns: 1fr;
+        gap: 1rem;
     }
 
-    .contenedor-emocion {
-        grid-template-columns: 1fr; 
-    }
-
-    .imagen-emocion img {
-        border-radius: 15px;
-    }
-}*/
+}
