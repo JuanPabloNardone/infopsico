@@ -31,6 +31,9 @@ header{
 .logo{
     width: 72px;
 }
+h1 {
+    margin-top: 10px; 
+}
 h2{
     border-bottom: 1px solid var(--negro);
     margin-bottom: 15px;
@@ -51,8 +54,7 @@ section{
 }
 nav{ /*Barra de navegación*/
     margin-left: 20px;
-    display: flex; 
-    flex-grow: 1;
+    display: flex;
 }
 
 nav ul { /*Barra de navegación: lista con enlaces para botones*/
@@ -68,17 +70,24 @@ nav ul li a { /*Barra de navegación: estilos de los enlaces para botones*/
     padding: 10px 20px;
     border-radius: 5px;
     transition: all 0.5s;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    
+    /*  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
     border-bottom: 3px outset var(--blanco);
     border-right: 3px outset var(--blanco);
-    background-color: var(--color--destacado);
+    background-color: var(--color--destacado);*/
 }
 
 nav ul li a:hover { /*Barra de navegación: estilos de los enlaces para botones en hover*/
-    background-color: var(--color--fondo);
     color: var(--negro);
+    text-shadow: 2px 2px 12px var(--blanco);
+    /*background-color: var(--color--fondo);
     border-bottom: 3px outset var(--negro);
-    border-right: 3px outset var(--negro);
+    border-right: 3px outset var(--negro);*/
+}
+
+nav ul li a.active {
+    font-weight: bold;
+    text-shadow: 2px 2px 12px var(--negro);
 }
 
 /* Footer */
@@ -109,7 +118,7 @@ footer{
 .caja-footer{ /*Cada una de las columnas del footer*/
     display: flex;
     flex-direction: column;
-    padding: 30px;
+    padding: 10px;
 }
 
 .caja-footer .descripcion{ /*Descripción que acompaña a los subtítulos*/
@@ -134,15 +143,22 @@ footer{
     display: flex;
     justify-content: center;
 }
+.redes a img{
+    width: 2rem;
+}
+.contenedor-iframe{
+    display: flex;
+    justify-content: center;
+}
 .caja-footer h2{ /*Subtítulo de cada columna*/
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     color: var(--negro);
     font-weight: 700;
     border: none; /*quitamos el borde general*/
 }
 
-.caja-footer a{ /**Enlasces de los subtítulos*/
-    margin-top: 10px;
+.caja-footer a{ /**Enlaces de los subtítulos*/
+    margin-bottom: 5px;
     color: var(--negro);
     opacity: 0.7;
     font-weight: 600;
@@ -311,7 +327,7 @@ footer{
     align-content: center;
 }
 .flip-card-front h3{
-    font-size: 2vw;
+    font-size: 1.5vw;
 }
 .flip-card-front .imagen-ramas{
     height: 100px;
@@ -578,17 +594,17 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px; /* Espacio entre icono y texto */
+    gap: 10px;
     justify-content: center;
 }
 
 .mas-datos img {
-    width: 24px; /* Tamaño uniforme para todos los iconos */
+    width: 24px;
     height: 24px;
 }
 
 .mas-datos span {
-    font-size: 1rem; /* Tamaño de texto consistente */
+    font-size: 1rem;
 }
 
 h3 {
@@ -600,15 +616,39 @@ h3 {
 /*MEDIA QUERIES*/
 
 @media (max-width: 768px) {
+    .navegacion {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .contenedor-header {
+        text-align: center;
+    }
+    .logo {
+        margin-bottom: 10px;
+    }
+}
+
+
+
+/*
+A REVISAR
+
+
+@media (max-width: 768px) {
     .contenedor-emociones {
         grid-template-columns: 1fr;
     }
 
     .contenedor-emocion {
-        grid-template-columns: 1fr; /* En pantallas pequeñas, la imagen irá encima del texto */
+        grid-template-columns: 1fr; 
     }
 
     .imagen-emocion img {
         border-radius: 15px;
     }
-}
+}*/

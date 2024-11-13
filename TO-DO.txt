@@ -1,0 +1,6 @@
+TO DO 12/11/2024:
+- Volver responsive la barra de navegación y el footer
+  a) Barra de navegación: Menú hamburguesa
+  b) Footer: Reducir espacios
+
+- Probar en pantallas grandes, celular parado < 450 y celular acostado, tablet parada y acostada < 950 
