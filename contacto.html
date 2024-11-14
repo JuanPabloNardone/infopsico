@@ -24,11 +24,11 @@
                         X
                     </button>
                     <ul>
-                        <li><a href="index.html" class="active">Inicio</a></li>
+                        <li><a href="index.html">Inicio</a></li>
                         <li><a href="psicologia.html">La psicología</a></li>
                         <li><a href="emociones.html">Las emociones</a></li>
                         <li><a href="comentarios.html">Comentarios</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="contacto.html" class="active">Contacto</a></li>
                     </ul>
                 </nav>
             </div>
@@ -52,26 +52,7 @@
                                 <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
                             </div>
                             <div class="contenedor-dato">
-                                <label for="age">Edad:</label>
-                                <input type="number" id="age" name="age" placeholder="Edad" required min="0">
-                                <label>Género:</label>                                    
-                                <label for="male">
-                                    <input type="radio" id="male" name="gender" value="masculino">
-                                    Masculino
-                                </label>
-                                <label for="female">
-                                    <input type="radio" id="female" name="gender" value="femenino">
-                                    Femenino
-                                </label>
-                                <label for="other">
-                                    <input type="radio" id="other" name="gender" value="otro">
-                                    Otro
-                                </label>
-                            </div>
-                        </div>
-                        <div class="datos">
-                            <div class="contenedor-dato">
-                                <label for="topic">Tema de Consulta:</label>
+                                <label for="topic">Consulta por:</label>
                                 <select id="topic" name="topic" required>
                                     <option value="" disabled selected>Selecciona un tema</option>
                                     <option value="ansiedad">Ansiedad</option>
@@ -80,8 +61,30 @@
                                     <option value="psicoterapia">Psicoterapia</option>
                                     <option value="otros">Otros</option>
                                 </select>
+                                <div class="contenedor-dato">
+                                    <label for="age">Edad:</label>
+                                    <input type="number" id="age" name="age" placeholder="Edad" required min="0">
+                                </div>
                             </div>
-                            <div class="contenedor-dato">
+
+                        </div>
+                        <div class="datos">
+                            <div class="contenedor-dato-genero">
+                                <label>Género:</label><br>                              
+                                <label for="male">
+                                    <input type="radio" id="male" name="gender" value="masculino">
+                                    Masculino
+                                </label><br>
+                                <label for="female">
+                                    <input type="radio" id="female" name="gender" value="femenino">
+                                    Femenino
+                                </label><br>
+                                <label for="other">
+                                    <input type="radio" id="other" name="gender" value="otro">
+                                    Otro
+                                </label>
+                            </div>
+                            <div class="contenedor-dato-novedades">
                                 <label for="subscribe">Quiero recibir novedades de InfoPsico</label>
                                 <input type="checkbox" id="subscribe" name="subscribe">
                             </div>
@@ -99,7 +102,7 @@
                     </section>
                 </form>
             </section>
-            <section class="mas-info">
+            <section>
                 <h3>Datos de contacto:</h3>
                 <div class="contenedor-mas-datos">
                     <div class="mas-datos">

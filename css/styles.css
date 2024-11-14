@@ -357,10 +357,11 @@ footer{
     transform: rotateY(180deg);
     border-radius: 25px 0px 25px 0px;
     padding: 25px;
+    display: grid;
+    align-items: center;
 }
 .flip-card-back p{
     text-align: center;
-    font-size: 1vw;
 }
 
 /*EMOCIONES.HTML: Estilos específicos*/
@@ -415,7 +416,6 @@ footer{
 .descripcion-emocion p {
     line-height: 1.5;
     text-align: left;
-
 } 
 
 /*COMENTARIOS.HTML: Estilos específicos*/
@@ -503,7 +503,7 @@ footer{
 .contenedor-columna-izquierda-contacto, .contenedor-secundario-form{
     display: grid;
     grid-template-columns: 4fr 1fr;
-    gap: 20px;
+    gap: 1.25rem;
 }
 
 .contact-form-section {
@@ -515,31 +515,37 @@ footer{
 
 .contact-form {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    grid-template-columns: 3fr 1fr;
+    gap: 1.5rem;
 }
 
 .datos{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1.25rem;
 }
 .botones-form{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 0.625rem;
     justify-content: end;
 }
 .contenedor-dato{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
+.contenedor-dato-genero{
+    display: block;
+}
+.contenedor-dato-genero input{
+    margin-bottom: 1rem;
+}
+
 .contact-form label, .contenedor-secundario-form label {
-    display: flex;
-    align-items: center;
     font-weight: 600;
     color: var(--negro);
-    margin: 8px;
+    margin: 0.5rem;
 }
 
 .contact-form input,
@@ -547,8 +553,8 @@ footer{
 .contact-form textarea,
 .contenedor-secundario-form textarea {
     flex-grow: 1;
-    padding: 0px 12px;
-    font-size: 16px;
+    padding: 0 1.75rem;
+    font-size: 1rem;
     border-radius: 5px;
     border: 2px solid var(--blanco);
     background-color: var(--blanco);
@@ -564,8 +570,8 @@ footer{
 }
 
 .contenedor-secundario-form button {
-    padding: 12px;
-    font-size: 18px;
+    padding: 0.75rem;
+    font-size: 1rem;
     background-color: var(--color--destacado);
     color: var(--blanco);
     border: none;
@@ -580,11 +586,11 @@ footer{
 }
 
 .contact-form label input[type="radio"] {
-    margin-right: 8px;
+    margin-right: 0.5rem;
 }
 
 .contact-form input[type="number"] {
-    width: 50%;
+    flex-grow: 0;
 }
 
 .contact-form input[type="checkbox"] { /*reseteamos propiedades para el checkbox*/
@@ -596,7 +602,7 @@ footer{
 
 .contenedor-mas-datos {
     display: grid;
-    gap: 15px; /* Espacio entre cada dato */
+    gap: 1rem; /* Espacio entre cada dato */
     text-align: center;
 }
 
@@ -604,13 +610,13 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 0.625rem;
     justify-content: center;
 }
 
 .mas-datos img {
-    width: 24px;
-    height: 24px;
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
 .mas-datos span {
@@ -619,7 +625,7 @@ footer{
 
 h3 {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 
@@ -695,7 +701,6 @@ h3 {
     }
 
     /*PSICOLOGÍA: Contenedores*/
-
     .contenedor-columna-derecha{
         grid-template-columns: 1fr;
         justify-items: center;
@@ -712,8 +717,33 @@ h3 {
         grid-template-columns: 1fr 1fr;
         gap: 1.5rem;
     }
-}
 
+    /*EMOCIONES: Contenedores*/
+    .descripcion-emocion {
+        padding: 10px;
+        grid-template-columns: 1fr;
+        justify-items: left;
+    }
+
+    .descripcion-emocion p {
+        line-height: 1.25;
+    } 
+
+    /*COMENTARIOS: Contenedores*/
+    .comentarios-section { /*Contenedor gneral de comentarios*/
+        max-width: 100%;
+        margin: 20px auto;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    
+    /*CONTACTO: Contenedores*/
+    .contenedor-columna-izquierda-contacto, .contenedor-secundario-form{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+}
 
 /* Media Query para dispositivos móviles (celulares) */
 @media screen and (max-width: 576px) {
@@ -727,9 +757,45 @@ h3 {
         max-width: 100%; /* Ajuste para que ocupe todo el ancho */
     }
 
+    /*PSICOLOGIA: Contenedores*/
     .contenedor-ramas{
         grid-template-columns: 1fr;
         gap: 1rem;
     }
 
+    /*EMOCIONES: Contenedores*/
+    .contenedor-emociones {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .descripcion-emocion {
+        padding: 5px;
+    }
+
+    .descripcion-emocion p {
+        line-height: 1.05;
+    } 
+
+    /*CONTACTO: Contenedores*/
+    .contenedor-dato{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .contenedor-dato-novedades{
+        flex-direction: row;
+        
+    }
+    
+}
+
+
+/* Media Query especial para formulario de contacto */
+@media screen and (max-width: 1148px){
+    
+    /*Contenedor general del formulario*/
+    .contact-form {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
 }
