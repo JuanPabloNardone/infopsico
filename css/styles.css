@@ -204,6 +204,51 @@ footer{
     text-align: justify;
 }
 
+#contenedorBoton{
+    text-align: center;
+}
+#traerDatosAutoridades{
+    padding: 10px;
+    background-color: var(--color--principal);
+    color: var(--blanco);
+    font-weight: 900;
+}
+
+ /* Estilo para cada bloque de autoridad */
+ .autoridad {
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+/* Estilo para la primera columna (20% del ancho) */
+.columna1 {
+    width: 20%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Estilo para la segunda columna (80% del ancho) */
+.columna2 {
+    width: 80%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-left: 1px solid var(--negro);
+}
+
+/* Opcional: mejorar la visualización de los textos */
+.columna1 strong {
+    display: block;
+    text-align: right;
+}
+
+.columna1 em {
+    display: block;
+    margin-top: 5px;
+    text-align: right;
+}
+
 /*Cards del index.html*/
 
 .tipos-psico-contenedor{
@@ -626,6 +671,16 @@ footer{
 h3 {
     text-align: center;
     margin-bottom: 1.25rem;
+}
+
+/*Modificaciones para validación de fomrulario*/
+input.error, select.error, textarea.error {
+    border: 2px solid red;
+}
+
+.error-label {
+    color: red !important; 
+    font-weight: bold;
 }
 
 

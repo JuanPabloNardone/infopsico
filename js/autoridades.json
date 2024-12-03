@@ -1,0 +1,22 @@
+[
+    {
+        "cargo": "Director",
+        "nombre": "Dr. Juan Pérez",
+        "descripcion": "Psicólogo clínico con más de 25 años de experiencia en psicoterapia individual y grupal. Especializado en trastornos de ansiedad y depresión, así como en el desarrollo de programas de intervención psicoeducativa."
+    },
+    {
+        "cargo": "Vicedirectora",
+        "nombre": "Dra. María López",
+        "descripcion": "Psicóloga organizacional con amplia experiencia en gestión de recursos humanos y desarrollo de programas de bienestar laboral. Su enfoque se centra en la psicología aplicada en ambientes corporativos y educativos."
+    },
+    {
+        "cargo": "Coordinador de Investigación",
+        "nombre": "Lic. Carlos Fernández",
+        "descripcion": "Licenciado en Psicología con un enfoque en investigación clínica. Se especializa en estudios sobre trastornos del comportamiento y en el desarrollo de nuevas terapias cognitivas para el tratamiento de la adicción."
+    },
+    {
+        "cargo": "Psicóloga Educacional",
+        "nombre": "Lic. Ana Rodríguez",
+        "descripcion": "Psicóloga educacional con experiencia en orientación escolar y atención a estudiantes con necesidades educativas especiales. Trabaja en la implementación de programas de apoyo psicológico en instituciones educativas."
+    }
+]

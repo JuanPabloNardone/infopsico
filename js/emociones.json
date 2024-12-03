@@ -1,0 +1,65 @@
+{
+    "emociones": [
+      {
+        "nombre": "Ira (Enojo)",
+        "imagen": "img/enojo.jpg",
+        "subtitulos": ["¿Qué es?", "¿Cuándo se manifiesta?", "¿Cómo regularla?"],
+        "descripciones": [
+          "La ira es una emoción negativa que se experimenta cuando percibimos una amenaza o injusticia, ya sea real o percibida. Es una respuesta a situaciones que nos hacen sentir impotentes o frustrados.",
+          "Se manifiesta principalmente cuando nos sentimos atacados, frustrados, injustamente tratados o cuando no se cumplen nuestras expectativas.",
+          "Para regularla, es importante practicar técnicas de relajación, como la respiración profunda o el mindfulness, y aprender a identificar los desencadenantes que nos hacen enojar para gestionarlos adecuadamente."
+        ]
+      },
+      {
+        "nombre": "Ansiedad",
+        "imagen": "img/ansiedad.jpeg",
+        "subtitulos": ["¿Qué es?", "¿Cuándo se manifiesta?", "¿Cómo regularla?"],
+        "descripciones": [
+          "La ansiedad es una emoción negativa que se caracteriza por una sensación de inquietud, preocupación o temor sobre el futuro, especialmente en situaciones donde no hay un peligro real inmediato.",
+          "La ansiedad surge principalmente en situaciones de incertidumbre o estrés, como en situaciones laborales, personales o al enfrentarse a lo desconocido.",
+          "Se puede regular con técnicas de relajación, ejercicio físico, meditación y buscando maneras efectivas de manejar el estrés. También, hablar sobre nuestras preocupaciones con otros puede ser de gran ayuda."
+        ]
+      },
+      {
+        "nombre": "Gratitud",
+        "imagen": "img/gratitud.jpg",
+        "subtitulos": ["¿Qué es?", "¿Cuándo se manifiesta?", "¿Cómo fomentarla?"],
+        "descripciones": [
+          "La gratitud es una emoción positiva que implica el reconocimiento y aprecio por los beneficios que hemos recibido de otros o de la vida en general.",
+          "Se manifiesta cuando sentimos que hemos recibido algo valioso de forma inesperada o cuando apreciamos la bondad de las personas o circunstancias que nos rodean.",
+          "Para fomentar la gratitud, es útil practicar el agradecimiento diario, reflexionar sobre lo que tenemos y expresar nuestro agradecimiento a los demás."
+        ]
+      },
+      {
+        "nombre": "Amor",
+        "imagen": "img/amor.png",
+        "subtitulos": ["¿Qué es?", "¿Cuándo se manifiesta?", "¿Cómo fomentarlo?"],
+        "descripciones": [
+          "El amor es una emoción positiva profunda que se asocia con sentimientos de afecto, cercanía, empatía y compromiso hacia otros seres, ya sea pareja, amigos o familia.",
+          "El amor se manifiesta cuando nos sentimos cercanos y conectados con alguien, ya sea en una relación romántica o en relaciones de amistad y familia.",
+          "Fomentar el amor implica dedicación, empatía y apoyo mutuo. La comunicación abierta y el respeto son claves para fortalecer los lazos afectivos."
+        ]
+      },
+      {
+        "nombre": "Tristeza",
+        "imagen": "img/tristeza.jpeg",
+        "subtitulos": ["¿Qué es?", "¿Cuándo se manifiesta?", "¿Cómo gestionarla?"],
+        "descripciones": [
+          "La tristeza es una emoción negativa que nos surge en respuesta a la pérdida, el dolor o situaciones que nos generan desdicha o malestar emocional.",
+          "Se manifiesta cuando nos enfrentamos a una pérdida, una decepción o momentos de vulnerabilidad emocional. Es natural después de experiencias difíciles como rupturas, fracasos o tragedias.",
+          "Gestionar la tristeza implica darle espacio para que se exprese, pero también buscar apoyo en amigos, familiares o profesionales cuando sea necesario. La auto-compasión y el autocuidado son claves."
+        ]
+      },
+      {
+        "nombre": "Felicidad",
+        "imagen": "img/felicidad.webp",
+        "subtitulos": ["¿Qué es?", "¿Cuándo se manifiesta?", "¿Cómo fomentarla?"],
+        "descripciones": [
+          "La felicidad es una emoción positiva que se caracteriza por un estado de satisfacción y bienestar. Se asocia con la consecución de metas, momentos de alegría o gratitud.",
+          "Se manifiesta cuando sentimos que nuestras necesidades están cubiertas o cuando experimentamos momentos de satisfacción en la vida. Puede surgir por una experiencia agradable o por logros personales.",
+          "Fomentar la felicidad involucra valorar lo que tenemos, practicar el agradecimiento y rodearnos de experiencias y personas que nos brinden alegría y apoyo."
+        ]
+      }
+    ]
+  }
+  

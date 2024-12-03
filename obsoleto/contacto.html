@@ -40,20 +40,20 @@
         <h2>Contacto - Info Psico</h2>
         <div class="contenedor-columna-izquierda-contacto">
             <section class="contact-form-section">
-                <form id="formularioContacto" action="https://formspree.io/f/myzyjord" method="POST">
+                <form action="https://formspree.io/f/myzyjord" method="POST">
                     <section class="contact-form">
                         <div class="datos">
                             <div class="contenedor-dato">
-                                <label for="nombre">Nombre Completo:</label>
-                                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" >
+                                <label for="name">Nombre Completo:</label>
+                                <input type="text" id="name" name="name" placeholder="Tu nombre completo" required>
                             </div>
                             <div class="contenedor-dato">
-                                <label for="correo">Correo Electrónico:</label>
-                                <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" >
+                                <label for="email">Correo Electrónico:</label>
+                                <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
                             </div>
                             <div class="contenedor-dato">
-                                <label for="tema">Consulta por:</label>
-                                <select id="tema" name="tema" >
+                                <label for="topic">Consulta por:</label>
+                                <select id="topic" name="topic" required>
                                     <option value="" disabled selected>Selecciona un tema</option>
                                     <option value="ansiedad">Ansiedad</option>
                                     <option value="depresion">Depresión</option>
@@ -62,25 +62,25 @@
                                     <option value="otros">Otros</option>
                                 </select>
                                 <div class="contenedor-dato">
-                                    <label for="edad">Edad:</label>
-                                    <input type="number" id="edad" name="edad" placeholder="Edad"  min="0">
+                                    <label for="age">Edad:</label>
+                                    <input type="number" id="age" name="age" placeholder="Edad" required min="0">
                                 </div>
                             </div>
 
                         </div>
                         <div class="datos">
                             <div class="contenedor-dato-genero">
-                                <label id="subtituloGenero">Género:</label><br>
-                                <label for="masculino">
-                                    <input type="radio" id="masculino" name="genero" value="masculino">
+                                <label>Género:</label><br>                              
+                                <label for="male">
+                                    <input type="radio" id="male" name="gender" value="masculino">
                                     Masculino
                                 </label><br>
-                                <label for="femenino">
-                                    <input type="radio" id="femenino" name="genero" value="femenino">
+                                <label for="female">
+                                    <input type="radio" id="female" name="gender" value="femenino">
                                     Femenino
                                 </label><br>
-                                <label for="otro">
-                                    <input type="radio" id="otro" name="genero" value="otro">
+                                <label for="other">
+                                    <input type="radio" id="other" name="gender" value="otro">
                                     Otro
                                 </label>
                             </div>
@@ -92,8 +92,8 @@
                     </section>
                     <section class="contenedor-secundario-form">
                         <div class="datos">
-                            <label for="mensaje">Tu mensaje: </label>
-                            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." ></textarea>
+                            <label for="message">Tu mensaje: </label>
+                            <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
                         </div>
                         <div class="botones-form">
                             <button type="submit">Enviar</button>
@@ -134,7 +134,6 @@
 
     <script src="js/navbar.js"></script>
     <script src="js/footer.js"></script>
-    <script src="js/formulario.js"></script>
 
 </body>
 </html>
