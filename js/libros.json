@@ -1,0 +1,62 @@
+{
+    "1": {
+        "Titulo": "LA MENTE EN FOCO",
+        "Autor": "Pérez, Laura",
+        "Año": 2023,
+        "Precio": 55000
+    },
+    "2": {
+        "Titulo": "PSICOLOGÍA DEL CAMBIO",
+        "Autor": "García, Andrés",
+        "Año": 2021,
+        "Precio": 43000
+    },
+    "3": {
+        "Titulo": "ENTENDER LAS EMOCIONES",
+        "Autor": "López, Sofía",
+        "Año": 2022,
+        "Precio": 39000
+    },
+    "4": {
+        "Titulo": "EL PODER DE LA MENTE",
+        "Autor": "Ramírez, Joaquín",
+        "Año": 2020,
+        "Precio": 60000
+    },
+    "5": {
+        "Titulo": "PSICOLOGÍA Y SOCIEDAD",
+        "Autor": "Torres, Elena",
+        "Año": 2024,
+        "Precio": 48000
+    },
+    "6": {
+        "Titulo": "DESCUBRIENDO EL COMPORTAMIENTO HUMANO",
+        "Autor": "Fernández, Miguel",
+        "Año": 2019,
+        "Precio": 25000
+    },
+    "7": {
+        "Titulo": "NEUROCIENCIA Y PSICOLOGÍA MODERNA",
+        "Autor": "Sánchez, María",
+        "Año": 2020,
+        "Precio": 58000
+    },
+    "8": {
+        "Titulo": "LA PSIQUE HUMANA EXPLICADA",
+        "Autor": "Gómez, Francisco",
+        "Año": 2022,
+        "Precio": 36000
+    },
+    "9": {
+        "Titulo": "HÁBITOS Y CREENCIAS",
+        "Autor": "Díaz, Paula",
+        "Año": 2021,
+        "Precio": 46000
+    },
+    "10": {
+        "Titulo": "TERAPIA Y RESILIENCIA",
+        "Autor": "Martínez, Jorge",
+        "Año": 2023,
+        "Precio": 52000
+    }
+}

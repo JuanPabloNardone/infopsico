@@ -207,11 +207,13 @@ footer{
 #contenedorBoton{
     text-align: center;
 }
-#traerDatosAutoridades{
+
+.subcontenedor-formulario input[type="submit"]{
     padding: 10px;
     background-color: var(--color--principal);
     color: var(--blanco);
     font-weight: 900;
+   
 }
 
  /* Estilo para cada bloque de autoridad */
@@ -614,7 +616,7 @@ footer{
     outline: none;
 }
 
-.contenedor-secundario-form button {
+.contenedor-secundario-form button, #contenedorBoton button, .subcontenedor-formulario input[type="submit"] {
     padding: 0.75rem;
     font-size: 1rem;
     background-color: var(--color--destacado);
@@ -625,7 +627,7 @@ footer{
     transition: background-color 0.3s;
 }
 
-.contenedor-secundario-form button:hover {
+.contenedor-secundario-form button:hover, #contenedorBoton button:hover, .subcontenedor-formulario input[type="submit"]:hover, .agregar-carrito:hover {
     background-color: var(--color--fondo);
     color: var(--negro);
 }
@@ -683,6 +685,173 @@ input.error, select.error, textarea.error {
     font-weight: bold;
 }
 
+/*TIENDA.HTML: Estilos específicos*/
+section h4{
+    margin: 20px 0px;
+}
+
+
+.contenedor-formularios{
+    width: 60%;
+    margin: 20px auto;
+}
+.subcontenedor-formulario{
+    display: grid;
+    row-gap: 20px;
+}
+.subcontenedor-formulario label{
+    font-weight: 600;
+    text-align: center;
+}
+.subcontenedor-formulario input{
+    padding: 1 1.75rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 2px solid var(--blanco);
+    background-color: var(--blanco);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s;
+}
+.subcontenedor-formulario input[type="submit"] {
+    justify-self: end;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem; 
+    align-self: center; 
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+/*TIENDA.HTML: Carrito de compras*/
+#productos{
+    background-color: var(--color--principal);
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.productos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+
+.contenedor-productos-carrito{
+    display: grid;
+    grid-template-columns: 70% auto;
+    gap: 2em;
+}
+
+.producto {
+    display: grid;
+    grid-template-columns: 20% 40% 40%;
+    justify-items: start;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 2px outset var(--color--destacado);
+    background-color: var(--color--secundario);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.producto img {
+    margin-right: 20px;
+    border-radius: 5px;
+}
+.producto div{
+    padding: 10px;
+}
+
+.precio{
+    font-size: 1.3em;
+    font-weight: 700;
+    color: var(--color--destacado);
+}
+
+.producto h3 {
+    margin: 0;
+    font-size: 1.2em;
+    text-align: left;
+}
+
+.producto p {
+    margin: 5px 0;
+}
+
+.btn-cantidad{
+    background-color: var(--color--destacado);
+    color: var(--blanco);
+    padding: 0.3rem 0.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+
+.btn-cantidad:hover {
+    background-color: var(--color--fondo);
+    color: var(--negro);
+}
+
+.agregar-carrito {
+    background-color: var(--color--destacado);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-left: auto;
+    transition: background-color 0.3s;
+}
+
+/*Parte del carrito*/
+#carrito h2{
+    border: none;
+}
+
+.titulo-carrito{
+    font-weight: 700;
+}
+.autor-carrito{
+    font-style: italic;
+}
+
+.precio-carrito {
+    text-align: right;
+    font-weight: 700;
+    color: var(--color--destacado);
+}
+
+/* Estilo para el contenedor del total */
+.total-carrito {
+    margin: 20px 0px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px;
+    background-color: var(--color--principal);
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Estilo para el texto del total */
+.total-carrito-texto {
+    font-size: 1.3rem;
+    color: var(--blanco);
+}
+
+.producto-carrito {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.producto-carrito img {
+    margin-right: 15px;
+    border-radius: 5px;
+}
 
 /*MEDIA QUERIES*/
 

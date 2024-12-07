@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Fuentes de Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>InfoPsico | Inicio</title>
+</head>
+<body>
+    <header>
+        <div class="contenedor-header">
+            <div class="navegacion">
+                <a href="index.html">
+                    <img src="img/logo_InfoPsico.png" alt="logo_infopsico" class="logo">
+                </a>
+                <button id="abrir" class="abrir-menu">
+                    <img src="img/barra-de-menus.png" alt="menu">
+                </button>
+                <nav id="nav">
+                    <button class="cerrar-menu" id="cerrar">
+                        X
+                    </button>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="psicologia.html">La psicología</a></li>
+                        <li><a href="emociones.html">Las emociones</a></li>
+                        <li><a href="comentarios.html">Comentarios</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="tienda.html" class="active">Tienda</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <h1>InfoPsico</h1>
+            <h4>Tu web de Psicología y aprendizaje</h4>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2>Tienda</h2>
+            <div class="contenedor-productos-carrito">
+                <div id="productos" class="productos">
+                    <!-- Los productos se cargarán aquí dinámicamente -->
+                </div>
+    
+                <!-- Carrito de Compras -->
+                <div id="carrito">
+                    <h2>Tu carrito 🛒</h2>
+                    <div id="lista-carrito">
+                        <!-- Los productos del carrito se cargarán aquí dinámicamente -->
+
+                    </div>
+                    <div id="contenedorBoton">
+                        <button id="vaciar-carrito">Vaciar Carrito</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Productos -->
+        </section>
+
+    </main>
+    <footer id="footer"></footer>
+
+    <script src="js/navbar.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/carrito.js"></script>
+
+</body>
+</html>

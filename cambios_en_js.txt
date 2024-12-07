@@ -2,3 +2,6 @@ CAMBIOS IMPLEMENTADOS PARA LA SEGUNDA ENTREGA:
 1- FOOTER incorporados por JS en todos los html, disponible en "footer.js". El header cambia según la págin,a por eso no se agregó
 2- SECCIÓN COMENTARIOS: Se cambian los comentarios y se agregan desde https://randomuser.me/
 3- EMOCIONES POR JSON: Se crea un archiovo emociones.json donde se traen las 6 emociones del archivo json
+
+CARRITO DE COMPRAS
+1- Login (solamente para dos usuarios). No se implementa la registración de usuarios p¿or limitaciones del FrontEnd.
