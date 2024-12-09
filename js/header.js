@@ -2,7 +2,7 @@
 const headerContainer = document.getElementById('header');
 
 // Obtener datos del usuario desde localStorage
-const usuario = JSON.parse(localStorage.getItem('usuario'));
+const nombreUsuario = JSON.parse(localStorage.getItem('usuario'));
 
 // Generar el contenido del header dinámico
 let header = `
@@ -25,7 +25,7 @@ let header = `
 `;
 
 // Modificar la barra de navegación según el estado del usuario
-if (usuario) {
+if (nombreUsuario) {
     // Si hay un usuario logueado, mostrar "Tienda" y "Cerrar sesión"
     header += `
         <li><a href="tienda.html">Tienda</a></li>
@@ -49,7 +49,7 @@ header += `
 headerContainer.innerHTML = header;
 
 // Agregar funcionalidad al botón de cerrar sesión
-if (usuario) {
+if (nombreUsuario) {
     const logoutButton = document.getElementById('nav-logout');
     logoutButton.addEventListener('click', (event) => {
         event.preventDefault();

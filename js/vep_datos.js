@@ -2,15 +2,14 @@
 
 // Obtener datos del carrito y del usuario
 const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
-const usuario = JSON.parse(localStorage.getItem('usuario')) || []; 
-console.log(usuario);
+const usuarioDatos = JSON.parse(localStorage.getItem('usuario')) || []; 
 
 // Mostrar datos del usuario
 document.getElementById('datosUsuario').innerHTML = `
-    <p><b>Nombre y apellido / Razón Social: </b>${usuario.nombre}</p>
-    <p><b>Domicilio: </b>${usuario.direccion.calle} ${usuario.direccion.numero} (${usuario.direccion.codigo_postal})</p>
-    <p><b>Teléfono: </b>${usuario.telefono}</p>
-    <p><b>Mail: </b>${usuario.correo}</p>`;
+    <p><b>Nombre y apellido / Razón Social: </b>${usuarioDatos.nombre}</p>
+    <p><b>Domicilio: </b>${usuarioDatos.direccion.calle} ${usuarioDatos.direccion.numero} (${usuarioDatos.direccion.codigo_postal})</p>
+    <p><b>Teléfono: </b>${usuarioDatos.telefono}</p>
+    <p><b>Mail: </b>${usuarioDatos.correo}</p>`;
 
 // Mostrar productos
 let total = 0;

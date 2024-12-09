@@ -2,7 +2,6 @@ const nav = document.querySelector("#nav");
 const abrir = document.querySelector("#abrir");
 const cerrar = document.querySelector("#cerrar");
 
-
 function abrirMenu(){
     nav.classList.add("visible");
 }
@@ -36,7 +35,7 @@ navLinks.forEach(link => {
 const navLoginButton = document.getElementById('nav-login');
 
 // Verificar si el usuario está logueado
-const usuario = localStorage.getItem('usuario');
+let usuario = localStorage.getItem('usuario');
 
 // Si hay un usuario en localStorage
 if (usuario) {
