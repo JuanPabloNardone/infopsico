@@ -4,4 +4,7 @@ CAMBIOS IMPLEMENTADOS PARA LA SEGUNDA ENTREGA:
 3- EMOCIONES POR JSON: Se crea un archiovo emociones.json donde se traen las 6 emociones del archivo json
 
 CARRITO DE COMPRAS
-1- Login (solamente para dos usuarios). No se implementa la registración de usuarios p¿or limitaciones del FrontEnd.
+1- LOGIN: No se implementa la registración de usuarios por limitaciones del FrontEnd.
+2- MUESTRA DE PRODUCTOS EN CARDS: Los datos se levantal del JSON de productos
+3- CARRITO DE COMPRAS: Generación del carrito de compras
+4- VEP de pago: Un a vez que se seleccionan los productos, se puede generar un VEP de pago ficticio e imprimir
