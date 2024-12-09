@@ -41,6 +41,10 @@ formLogin.addEventListener('submit', (event) => {
         alert('Inicio de sesión exitoso. ¡Bienvenido!');
         // Redirigir a otra página si es necesario
         window.location.href = "tienda.html";
+        // Vacía el carrito si tenía datos
+        if (localStorage.getItem('carrito') !== null) {
+            localStorage.removeItem('carrito');
+        }         
     } else {
         alert('Error: Usuario o contraseña incorrectos');
     }

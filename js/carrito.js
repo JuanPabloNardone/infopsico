@@ -7,7 +7,7 @@ function cargarProductos() {
             contenedorProductos.innerHTML = ''; // Limpiar contenido previo
             for (const id in data) {
                 const producto = data[id];
-                const nombreImagen = `${producto.Titulo} - ${producto.Autor} (${producto.Año}).webp`;
+                const nombreImagen = `${producto.Titulo} - ${producto.Autor} (${producto.Año}).png`;
 
                 const productoDiv = document.createElement('div');
                 productoDiv.classList.add('producto');

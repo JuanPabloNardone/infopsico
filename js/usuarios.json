@@ -1,12 +1,80 @@
 [
     {
-        "nombre": "juan",
-        "correo": "juan@gmail.com",
-        "password": "juan1234"
+        "nombre": "Juan Pablo Nardone",
+        "correo": "juanpablo.nardone@bue.edu.ar",
+        "password": "Juan2024!",
+        "direccion": {
+            "provincia": "Buenos Aires",
+            "ciudad": "Capital Federal",
+            "calle": "Av. Falsa",
+            "numero": 1234,
+            "codigo_postal": "1900"
+        },
+        "telefono": "+54 11 4123-7890"
     },
     {
-        "nombre": "pedro",
-        "correo": "pedro@gmail.com",
-        "password": "pedro2345"
+        "nombre": "María Fernández",
+        "correo": "maria.fernandez@gmail.com",
+        "password": "Maria2024*",
+        "direccion": {
+            "provincia": "Buenos Aires",
+            "ciudad": "La Plata",
+            "calle": "Calle 50",
+            "numero": 1234,
+            "codigo_postal": "1900"
+        },
+        "telefono": "+54 221 456-7890"
+    },
+    {
+        "nombre": "Carlos López",
+        "correo": "carlos.lopez@gmail.com",
+        "password": "Carlos123!",
+        "direccion": {
+            "provincia": "Córdoba",
+            "ciudad": "Córdoba Capital",
+            "calle": "Av. Colón",
+            "numero": 5678,
+            "codigo_postal": "5000"
+        },
+        "telefono": "+54 351 234-5678"
+    },
+    {
+        "nombre": "Ana Martínez",
+        "correo": "ana.martinez@gmail.com",
+        "password": "Martinez#5678",
+        "direccion": {
+            "provincia": "Santa Fe",
+            "ciudad": "Rosario",
+            "calle": "Bv. Oroño",
+            "numero": 987,
+            "codigo_postal": "2000"
+        },
+        "telefono": "+54 341 654-3210"
+    },
+    {
+        "nombre": "Luis Gómez",
+        "correo": "luis.gomez@gmail.com",
+        "password": "Gomez2024*",
+        "direccion": {
+            "provincia": "Mendoza",
+            "ciudad": "Mendoza Capital",
+            "calle": "San Martín",
+            "numero": 4321,
+            "codigo_postal": "5500"
+        },
+        "telefono": "+54 261 987-6543"
+    },
+    {
+        "nombre": "Sofía Rodríguez",
+        "correo": "sofia.rodriguez@gmail.com",
+        "password": "Sofia&2024",
+        "direccion": {
+            "provincia": "Neuquén",
+            "ciudad": "Neuquén Capital",
+            "calle": "Av. Argentina",
+            "numero": 876,
+            "codigo_postal": "8300"
+        },
+        "telefono": "+54 299 123-4567"
     }
 ]

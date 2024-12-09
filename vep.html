@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generar VEP</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        
+        .empresa { text-align: center; margin-bottom: 20px; }
+        .datos-usuario, .productos { margin: 20px 0; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: center; }
+        th { background-color: #f4f4f4; }
+        .total { font-weight: bold; font-size: 1.2em; }
+    </style>
+</head>
+<body>
+    <div class="empresa">
+        <div class="contenedor-logo">
+            <img src="img/logo_InfoPsico.png" alt="Logo de InfoPsico" class="logo-vep">
+        </div>
+        <div class="datos-empresa">
+            <h1>InfoPsico</h1>
+            <h4>Tu web de Psicología y aprendizaje</h4>
+            <img src="img/domicilio.png" alt="domicilio">
+            <span>Av. Libertador 1234, Piso 5, Oficina 501, Buenos Aires, CABA, Argentina</span> <br>
+            <img src="img/telefono.png" alt="teléfono">
+            <span>+54 11 4321-5678</span> <br>
+            <img src="img/email.png" alt="email">
+            <span><a href="mailto:contacto@infopsico.com.ar">contacto@infopsico.com.ar</a></span> <br>
+            <img src="img/whatsapp.png" alt="whatsapp">
+            <span>+54 9 11 6543-2100</span>
+        </div>
+    </div>
+    <div class="encabezado-vep">
+        <h2>VEP de pago</h2>
+    </div>
+
+    <div class="datos-usuario">
+        <div id="datosUsuario">
+            <p><b>Nombre y apellido / Razón Social: </b>${usuario.nombre}</p>
+            <p><b>Domicilio: </b>${usuario.direccion.calle} ${usuario.direccion.numero} (${usuario.direccion.codigo_postal})</p>
+            <p><b>Teléfono: </b>${usuario.telefono}</p>
+            <p><b>Mail: </b>${usuario.correo}</p>
+        </div>
+    </div>
+    
+    <h3>Productos</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Precio Unitario</th>
+                <th>Cantidad</th>
+                <th>Subtotal</th>
+            </tr>
+        </thead>
+        <tbody id="listadoProductos"></tbody>
+    </table>
+    <div class="total">Total: $<span id="total"></span></div>
+    <div id="contenedorBoton">
+        <button id="imprimir">Imprimir</button>
+    </div>
+
+    <script src="js/vep_datos.js"></script>
+</body>
+</html>

@@ -853,6 +853,62 @@ section h4{
     border-radius: 5px;
 }
 
+/*VEP de pago*/
+.contenedor-logo{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.logo-vep{
+    width: 120px;
+}
+.empresa{
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    justify-items: space-between;
+}
+.datos-empresa{
+    text-align: start;
+}
+
+.encabezado-vep h2{
+    padding: 0.5em;
+    background-color: var(--color--principal);
+    text-align: center;
+    border: none;
+}
+
+.datos-usuario{
+    padding: 0em 2em;
+}
+#datosUsuario p{
+    padding: 0.5em 0em;
+}
+
+table thead tr th{
+    background-color: var(--color--destacado);
+    color: var(--blanco);
+    border: 1px solid var(--negro);
+    border-top: 2px solid var(--negro);
+    border-bottom: 2px solid var(--negro);
+}
+table tbody{
+    background-color: var(--blanco);
+}
+table tbody tr td{
+    border: 1px solid var(--negro);
+}
+table tbody tr td:last-child{
+    font-weight: 700;
+    background-color: var(--color--principal);
+}
+.total{
+    padding: 1em;
+    text-align: right;
+}
+
+
 /*MEDIA QUERIES*/
 
 @media screen and (max-width: 768px){
