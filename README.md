@@ -123,26 +123,32 @@ El pie de página incluye:
 --------------------------------------------------
 
 **GENERALES**
-1- FOOTER incorporados por JS en todos los html, disponible en "footer.js".
-2- HEADER incorporados por JS en todos los html, disponible en "HEADER.js".
-2- SECCIÓN COMENTARIOS: Se cambian los comentarios y se agregan desde https://randomuser.me/
-3- EMOCIONES POR JSON: Se crea un archivo emociones.json donde se traen las 6 emociones del archivo json
+1. FOOTER incorporados por JS en todos los html, disponible en "footer.js".
+
+2. HEADER incorporados por JS en todos los html, disponible en "HEADER.js".
+
+3. SECCIÓN COMENTARIOS: Se cambian los comentarios y se agregan desde https://randomuser.me/
+
+4. EMOCIONES POR JSON: Se crea un archivo emociones.json donde se traen las 6 emociones del archivo JSON.
 
 **CARRITO DE COMPRAS**
-1- LOGIN: No se implementa la registración de usuarios por limitaciones del FrontEnd.
-2- MUESTRA DE PRODUCTOS EN CARDS: Los datos se levantal del JSON de productos
-3- CARRITO DE COMPRAS: Generación del carrito de compras
-4- VEP de pago: Una vez que se seleccionan los productos, se puede generar un VEP de pago ficticio e imprimir
+1. LOGIN: No se implementa la registración de usuarios por limitaciones del FrontEnd.
+
+2. MUESTRA DE PRODUCTOS EN CARDS: Los datos se levantal del JSON de productos.
+
+3. CARRITO DE COMPRAS: Generación del carrito de compras.
+
+4. VEP de pago: Una vez que se seleccionan los productos, se puede generar un VEP de pago ficticio e imprimir.
 
 **SESIONES**
-Se maneja localStorage para almacenar datos del usuario y selecciones del carrito de compras.
-Las sesiones se abren a rtavés del formulario login y se ceirran dentro de la tienda.
+- Se maneja localStorage para almacenar datos del usuario y selecciones del carrito de compras.
+- Las sesiones se abren a través del formulario login y se cierran dentro de la tienda.
 
 **CARRITO RESPONSIVE**
-Se ajusta elcarrito para que sea responsivo en 3 puntos de corte
+- Se ajusta elcarrito para que sea responsivo en 3 puntos de corte
 
 **DATOS EN JSON**
-Persisten diversos datos de solo lectura en JSON (usuarios, libros, emociones, autoridades)
+- Persisten diversos datos de solo lectura en JSON (usuarios, libros, emociones, autoridades)
 
 **ARCHIVOS JS DIFERENCIADOS**
-Se guarda el código en archivos diferenciados de acuerdo a la funcionalidad
+- Se guarda el código en archivos diferenciados de acuerdo a la funcionalidad que representa cada uno
